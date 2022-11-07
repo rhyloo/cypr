@@ -1,0 +1,12 @@
+[0.012s] Invoking command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg -- -j8 -l8
+[0.050s] [ 33%] Built target hello
+[0.054s] [ 83%] [32mBuilding CXX object CMakeFiles/actuator.dir/src/actuator.cpp.o[0m
+[0.054s] [ 83%] Built target randomController
+[1.988s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/actuator.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.988s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/actuator.cpp:47:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kpuntero_a_nodo[m[K’ was not declared in this scope
+[1.988s]    47 |     rclcpp::spin_some([01;31m[Kpuntero_a_nodo[m[K);
+[1.988s]       |                       [01;31m[K^~~~~~~~~~~~~~[m[K
+[4.092s] gmake[2]: *** [CMakeFiles/actuator.dir/build.make:76: CMakeFiles/actuator.dir/src/actuator.cpp.o] Error 1
+[4.092s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/actuator.dir/all] Error 2
+[4.093s] gmake: *** [Makefile:146: all] Error 2
+[4.095s] Invoked command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg -- -j8 -l8

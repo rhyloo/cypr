@@ -41,7 +41,15 @@ int main(int argc, char * argv[])
 {
   rclcpp::init(argc,argv);
   auto node = std::make_shared<Actuator>();
-  rclcpp::spin(node);
+  rclcpp::Rate loop_rate(2);
+  while (rclcpp::ok()) {
+    //Atendemos a los topics subscritos y modificamos velocidades
+    rclcpp::spin_some(node);
+    //publicamos Twist al robot (idealmente con un método de la clase)
+    // mantenemos rate
+    loop_rate.sleep();
+  }
+  // rclcpp::spin(node);
   rclcpp::shutdown();
   return 0;
 }
