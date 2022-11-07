@@ -4,7 +4,7 @@ using std::placeholders::_1;
 
 Actuator::Actuator(): Node ("actuator"){
   pub_ = this->create_publisher<geometry_msgs::msg::Twist> ("/turtle1/cmd_vel", 10);
-  sub_ = this->create_subscription<std_msgs::msg::String> ("/action",10,std::bind(&Actuator::execute_command, this, _1));
+  sub_ = this->create_subscription<std_msgs::msg::String> ("/cmd_random",10,std::bind(&Actuator::execute_command, this, _1));
 }
 
 Actuator::~Actuator()

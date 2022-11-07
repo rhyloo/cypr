@@ -1,0 +1,9 @@
+<launch>
+<node pkg="first_pkg" exec="randomController" name="randomController" launch-prefix="xfce4-terminal"/>
+<node pkg="first_pkg" exec="actuator" name="actuator" launch-prefix="xfce4-terminal"/>
+<node pkg="turtlesim" exec="turtlesim_node" name="turtilesim_node">
+      <param name="background_r" value="0"/>
+      <param name="background_g" value="0"/>
+      <param name="background_b" value="0"/>
+</node>
+</launch>
