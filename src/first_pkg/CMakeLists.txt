@@ -34,16 +34,18 @@ include_directories(
   )
 
 # 1 Me creo un ejecutable llamado ** que esta en el SRC
-add_executable(hello src/hello.cpp)
+# add_executable(hello src/hello.cpp)
 add_executable(randomController src/randomController.cpp)
 add_executable(actuator src/actuator.cpp)
+add_executable(keyController src/keyController.cpp)
 #add_executable(randomController src/randomController.cpp src/mimain.cpp) Si tuviera el main en otro fichero, probar en casa
 
 # 2
 install(TARGETS
-  hello
+  # hello
   randomController
   actuator
+  keyController
   DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY
@@ -52,4 +54,5 @@ install(DIRECTORY
 
 ament_target_dependencies(randomController rclcpp std_msgs)
 ament_target_dependencies(actuator rclcpp std_msgs geometry_msgs)
+ament_target_dependencies(keyController rclcpp std_msgs)
 ament_package()

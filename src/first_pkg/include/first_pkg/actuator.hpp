@@ -17,5 +17,6 @@ public:
 private:
   rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr pub_;
   rclcpp::Subscription<std_msgs::msg::String>::SharedPtr sub_;
+  rclcpp::Subscription<std_msgs::msg::String>::SharedPtr sub2_;
   size_t count_;
 };

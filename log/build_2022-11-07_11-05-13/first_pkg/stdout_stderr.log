@@ -1,0 +1,14 @@
+[35m[1mConsolidate compiler generated dependencies of target keyController[0m
+[ 33%] Built target randomController
+[ 50%] [32mBuilding CXX object CMakeFiles/actuator.dir/src/actuator.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/keyController.dir/src/keyController.cpp.o[0m
+[01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/actuator.cpp:[m[K In constructor ‘[01m[KActuator::Actuator()[m[K’:
+[01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/actuator.cpp:8:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ksub2_[m[K’ was not declared in this scope; did you mean ‘[01m[Ksub_[m[K’?
+    8 |   [01;31m[Ksub2_[m[K = this->create_subscription<std_msgs::msg::String> ("/cmd_key",10,std::bind(&Actuator::execute_command, this, _1));
+      |   [01;31m[K^~~~~[m[K
+      |   [32m[Ksub_[m[K
+[ 83%] [32m[1mLinking CXX executable keyController[0m
+[ 83%] Built target keyController
+gmake[2]: *** [CMakeFiles/actuator.dir/build.make:76: CMakeFiles/actuator.dir/src/actuator.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/actuator.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

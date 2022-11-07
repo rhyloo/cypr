@@ -198,19 +198,6 @@ first_pkg_uninstall/fast:
 .PHONY : first_pkg_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named hello
-
-# Build rule for target.
-hello: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello
-.PHONY : hello
-
-# fast build rule for target.
-hello/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
-.PHONY : hello/fast
-
-#=============================================================================
 # Target rules for targets named randomController
 
 # Build rule for target.
@@ -236,6 +223,19 @@ actuator/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuator.dir/build.make CMakeFiles/actuator.dir/build
 .PHONY : actuator/fast
 
+#=============================================================================
+# Target rules for targets named keyController
+
+# Build rule for target.
+keyController: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 keyController
+.PHONY : keyController
+
+# fast build rule for target.
+keyController/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyController.dir/build.make CMakeFiles/keyController.dir/build
+.PHONY : keyController/fast
+
 src/actuator.o: src/actuator.cpp.o
 .PHONY : src/actuator.o
 
@@ -260,29 +260,29 @@ src/actuator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/actuator.dir/build.make CMakeFiles/actuator.dir/src/actuator.cpp.s
 .PHONY : src/actuator.cpp.s
 
-src/hello.o: src/hello.cpp.o
-.PHONY : src/hello.o
+src/keyController.o: src/keyController.cpp.o
+.PHONY : src/keyController.o
 
 # target to build an object file
-src/hello.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/src/hello.cpp.o
-.PHONY : src/hello.cpp.o
+src/keyController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyController.dir/build.make CMakeFiles/keyController.dir/src/keyController.cpp.o
+.PHONY : src/keyController.cpp.o
 
-src/hello.i: src/hello.cpp.i
-.PHONY : src/hello.i
+src/keyController.i: src/keyController.cpp.i
+.PHONY : src/keyController.i
 
 # target to preprocess a source file
-src/hello.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/src/hello.cpp.i
-.PHONY : src/hello.cpp.i
+src/keyController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyController.dir/build.make CMakeFiles/keyController.dir/src/keyController.cpp.i
+.PHONY : src/keyController.cpp.i
 
-src/hello.s: src/hello.cpp.s
-.PHONY : src/hello.s
+src/keyController.s: src/keyController.cpp.s
+.PHONY : src/keyController.s
 
 # target to generate assembly for a file
-src/hello.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/src/hello.cpp.s
-.PHONY : src/hello.cpp.s
+src/keyController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyController.dir/build.make CMakeFiles/keyController.dir/src/keyController.cpp.s
+.PHONY : src/keyController.cpp.s
 
 src/randomController.o: src/randomController.cpp.o
 .PHONY : src/randomController.o
@@ -324,14 +324,14 @@ help:
 	@echo "... first_pkg_uninstall"
 	@echo "... uninstall"
 	@echo "... actuator"
-	@echo "... hello"
+	@echo "... keyController"
 	@echo "... randomController"
 	@echo "... src/actuator.o"
 	@echo "... src/actuator.i"
 	@echo "... src/actuator.s"
-	@echo "... src/hello.o"
-	@echo "... src/hello.i"
-	@echo "... src/hello.s"
+	@echo "... src/keyController.o"
+	@echo "... src/keyController.i"
+	@echo "... src/keyController.s"
 	@echo "... src/randomController.o"
 	@echo "... src/randomController.i"
 	@echo "... src/randomController.s"
