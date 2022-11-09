@@ -1,7 +1,0 @@
-[01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/actuator.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
-[01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/actuator.cpp:47:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kpuntero_a_nodo[m[K’ was not declared in this scope
-   47 |     rclcpp::spin_some([01;31m[Kpuntero_a_nodo[m[K);
-      |                       [01;31m[K^~~~~~~~~~~~~~[m[K
-gmake[2]: *** [CMakeFiles/actuator.dir/build.make:76: CMakeFiles/actuator.dir/src/actuator.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/actuator.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

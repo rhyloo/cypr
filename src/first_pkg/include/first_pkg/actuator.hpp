@@ -12,7 +12,9 @@ public:
 
   ~Actuator();
 
-  void execute_command(const std_msgs::msg::String::SharedPtr msg) const;
+  void sendRandomCommand(const std_msgs::msg::String::SharedPtr msg) const;
+  void sendKeyCommand(const std_msgs::msg::String::SharedPtr msg) const;
+  void publishActuation() ;
 
 private:
   rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr pub_;

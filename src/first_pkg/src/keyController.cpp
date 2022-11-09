@@ -28,19 +28,19 @@ void keyController::publish_method(){
       switch (input){
       case 0x41:
         // RCLCPP_INFO(this->get_logger(), "[KeyController] Detected Up key\r");
-        message.data = "fordwards";
+        message.data = "v++";
         break;
       case 0x42:
         // RCLCPP_INFO(this->get_logger(), "[KeyController] Detected Down key\r");
-        message.data = "backwards";
+        message.data = "v--";
         break;
       case 0x43:
         // RCLCPP_INFO(this->get_logger(), "[KeyController] Detected Right key\r");
-        message.data = "right";
+        message.data = "w++";
         break;
       case 0x44:
         // RCLCPP_INFO(this->get_logger(), "[KeyController] Detected Left key\r");
-        message.data = "left";
+        message.data = "w--";
         break;
       case 0x20:
         // RCLCPP_INFO(this->get_logger(), "[KeyController] Detected Space key\r");

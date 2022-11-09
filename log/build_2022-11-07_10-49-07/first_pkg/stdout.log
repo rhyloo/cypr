@@ -1,3 +1,0 @@
-[ 33%] Built target hello
-[ 83%] [32mBuilding CXX object CMakeFiles/actuator.dir/src/actuator.cpp.o[0m
-[ 83%] Built target randomController

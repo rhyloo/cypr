@@ -1,0 +1,7 @@
+[01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/actuator.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/actuator.cpp:77:5:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ is not a class, namespace, or enumeration
+   77 |     [01;31m[Knode[m[K::publishActuation();
+      |     [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/actuator.dir/build.make:76: CMakeFiles/actuator.dir/src/actuator.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/actuator.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

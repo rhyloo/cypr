@@ -1,4 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target keyController[0m
-[ 66%] Built target actuator
-[ 66%] Built target randomController
-[ 83%] [32mBuilding CXX object CMakeFiles/keyController.dir/src/keyController.cpp.o[0m

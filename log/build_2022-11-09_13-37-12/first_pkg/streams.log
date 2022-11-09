@@ -1,0 +1,13 @@
+[0.011s] Invoking command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg -- -j8 -l8
+[0.044s] [35m[1mConsolidate compiler generated dependencies of target actuator[0m
+[0.054s] [ 66%] Built target randomController
+[0.054s] [ 66%] Built target keyController
+[0.059s] [ 83%] [32mBuilding CXX object CMakeFiles/actuator.dir/src/actuator.cpp.o[0m
+[2.040s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/actuator.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.040s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/actuator.cpp:77:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass std::shared_ptr<Actuator>[m[K’ has no member named ‘[01m[KpublishActuation[m[K’
+[2.040s]    77 |     node.[01;31m[KpublishActuation[m[K();
+[2.040s]       |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[4.206s] gmake[2]: *** [CMakeFiles/actuator.dir/build.make:76: CMakeFiles/actuator.dir/src/actuator.cpp.o] Error 1
+[4.207s] gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/actuator.dir/all] Error 2
+[4.207s] gmake: *** [Makefile:146: all] Error 2
+[4.209s] Invoked command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg -- -j8 -l8
