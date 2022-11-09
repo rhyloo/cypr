@@ -57,7 +57,8 @@ void Actuator::sendKeyCommand(const std_msgs::msg::String::SharedPtr msg) const{
 
   keyControllerActuation.linear.x = linear;
   keyControllerActuation.angular.z = angular;
-
+  RCLCPP_INFO (this->get_logger(), "Velocidad lineal: '%f'",linear);
+  RCLCPP_INFO (this->get_logger(), "Velocidad angular: '%f'",angular);
 }
 
 void Actuator::publishActuation(){

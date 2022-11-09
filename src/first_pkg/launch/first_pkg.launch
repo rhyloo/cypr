@@ -1,6 +1,6 @@
 <launch>
-<node pkg="first_pkg" exec="randomController" name="randomController" launch-prefix="xfce4-terminal"/>
-<node pkg="first_pkg" exec="actuator" name="actuator" launch-prefix="xfce4-terminal"/>
+<node pkg="first_pkg" exec="keyController" name="keyController" launch-prefix="mate-terminal --tab --title='keyController' -x"/>
+<node pkg="first_pkg" exec="actuator" name="actuator" launch-prefix="mate-terminal --tab --title='actuator' -x"/>
 <node pkg="turtlesim" exec="turtlesim_node" name="turtilesim_node">
       <param name="background_r" value="0"/>
       <param name="background_g" value="0"/>
