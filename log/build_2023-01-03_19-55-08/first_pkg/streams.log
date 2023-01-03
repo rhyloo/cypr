@@ -1,0 +1,25 @@
+[0.028s] Invoking command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg -- -j8 -l8
+[0.101s] [35m[1mConsolidate compiler generated dependencies of target squareController[0m
+[0.114s] [ 50%] Built target randomController
+[0.114s] [ 50%] Built target keyController
+[0.114s] [ 75%] Built target actuator
+[0.132s] [ 87%] [32mBuilding CXX object CMakeFiles/squareController.dir/src/squareController.cpp.o[0m
+[4.053s] In file included from [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:1[m[K:
+[4.053s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/include/first_pkg/squareController.hpp:18:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krclppp[m[K’ does not name a type
+[4.053s]    18 |   [01;31m[Krclppp[m[K::declare_parameter<int>("lado",5);
+[4.053s]       |   [01;31m[K^~~~~~[m[K
+[4.059s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:[m[K In constructor ‘[01m[KsquareController::squareController()[m[K’:
+[4.059s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:5:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krclppp[m[K’ has not been declared
+[4.060s]     5 |   [01;31m[Krclppp[m[K::declare_parameter<int>("lado",5);
+[4.060s]       |   [01;31m[K^~~~~~[m[K
+[4.060s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:5:29:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+[4.060s]     5 |   rclppp::declare_parameter<[01;31m[Kint[m[K>("lado",5);
+[4.061s]       |                             [01;31m[K^~~[m[K
+[4.072s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:[m[K In member function ‘[01m[Kvoid squareController::publish_method()[m[K’:
+[4.072s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:17:30:[m[K [01;31m[Kerror: [m[K‘[01m[Klado[m[K’ was not declared in this scope
+[4.072s]    17 |   this->get_parameter("lado",[01;31m[Klado[m[K);
+[4.072s]       |                              [01;31m[K^~~~[m[K
+[5.318s] gmake[2]: *** [CMakeFiles/squareController.dir/build.make:76: CMakeFiles/squareController.dir/src/squareController.cpp.o] Error 1
+[5.318s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/squareController.dir/all] Error 2
+[5.318s] gmake: *** [Makefile:146: all] Error 2
+[5.320s] Invoked command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg -- -j8 -l8

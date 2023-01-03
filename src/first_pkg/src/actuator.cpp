@@ -1,5 +1,5 @@
 #include <first_pkg/actuator.hpp>
-#define PI 3.1415926535897 
+#include <math.h>
 using std::placeholders::_1;
 
 Actuator::Actuator(): Node ("actuator"){
@@ -63,22 +63,20 @@ void Actuator::sendKeyCommand(const std_msgs::msg::String::SharedPtr msg) const{
 }
 
 void Actuator::sendSquareCommand(const std_msgs::msg::String::SharedPtr msg) const{
-  geometry_msgs::msg::Twist actuation;
-  float linear, angular;
 
   RCLCPP_INFO (this->get_logger(), "Received: '%s'",msg->data.c_str());
 
   if(msg->data=="avanzar"){
-    linear = 10; angular=0;
+  keyControllerActuation.linear.x = 1;
+  keyControllerActuation.angular.z = 0;
   }else if (msg->data=="girar"){
-    linear = 0; angular=98;
+  keyControllerActuation.linear.x = 0;
+  keyControllerActuation.angular.z =  1.57079633; //rad/s
+  }else if (msg->data=="stop"){
+  keyControllerActuation.linear.x = 0;
+  keyControllerActuation.angular.z =0; //rad/s
   }
-
-  actuation.linear.x = linear;
-  actuation.angular.z = angular;
-
-  pub_->publish(actuation);
-
+  
 }
 
 void Actuator::publishActuation(){
@@ -91,7 +89,7 @@ int main(int argc, char * argv[])
   //  Actuator Publicador;
   auto node = std::make_shared<Actuator>();
 
-  rclcpp::Rate loop_rate(1);
+  rclcpp::Rate loop_rate(20);
   
   while (rclcpp::ok()) {
     //Atendemos a los topics subscritos y modificamos velocidades

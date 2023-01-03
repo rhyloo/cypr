@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target squareController[0m
+[ 25%] Built target keyController
+[ 50%] Built target actuator
+[ 75%] Built target randomController
+[ 87%] [32mBuilding CXX object CMakeFiles/squareController.dir/src/squareController.cpp.o[0m
+[01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:[m[K In member function ‘[01m[Kvoid squareController::publish_method()[m[K’:
+[01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:39:12:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(rclcpp::Rate {aka rclcpp::GenericRate<std::chrono::_V2::system_clock>}) (double)[m[K’
+   39 |   [01;31m[Kloop_rate(1.0)[m[K;
+      |   [01;31m[K~~~~~~~~~^~~~~[m[K
+gmake[2]: *** [CMakeFiles/squareController.dir/build.make:76: CMakeFiles/squareController.dir/src/squareController.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/squareController.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

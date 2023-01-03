@@ -1,0 +1,11 @@
+In file included from [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:1[m[K:
+[01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/include/first_pkg/squareController.hpp:18:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krclppp[m[K’ does not name a type
+   18 |   [01;31m[Krclppp[m[K::declare_parameter<int>("lado",5);
+      |   [01;31m[K^~~~~~[m[K
+[01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:[m[K In member function ‘[01m[Kvoid squareController::publish_method()[m[K’:
+[01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:16:30:[m[K [01;31m[Kerror: [m[K‘[01m[Klado[m[K’ was not declared in this scope
+   16 |   this->get_parameter("lado",[01;31m[Klado[m[K);
+      |                              [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/squareController.dir/build.make:76: CMakeFiles/squareController.dir/src/squareController.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/squareController.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

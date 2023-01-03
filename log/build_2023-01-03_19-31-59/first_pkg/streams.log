@@ -1,0 +1,14 @@
+[0.026s] Invoking command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg -- -j8 -l8
+[0.105s] [35m[1mConsolidate compiler generated dependencies of target squareController[0m
+[0.117s] [ 25%] Built target keyController
+[0.119s] [ 75%] Built target actuator
+[0.119s] [ 75%] Built target randomController
+[0.140s] [ 87%] [32mBuilding CXX object CMakeFiles/squareController.dir/src/squareController.cpp.o[0m
+[4.475s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:[m[K In member function ‘[01m[Kvoid squareController::publish_method()[m[K’:
+[4.476s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:39:12:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(rclcpp::Rate {aka rclcpp::GenericRate<std::chrono::_V2::system_clock>}) (int)[m[K’
+[4.476s]    39 |   [01;31m[Kloop_rate(1)[m[K;
+[4.476s]       |   [01;31m[K~~~~~~~~~^~~[m[K
+[5.915s] gmake[2]: *** [CMakeFiles/squareController.dir/build.make:76: CMakeFiles/squareController.dir/src/squareController.cpp.o] Error 1
+[5.915s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/squareController.dir/all] Error 2
+[5.915s] gmake: *** [Makefile:146: all] Error 2
+[5.919s] Invoked command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg -- -j8 -l8

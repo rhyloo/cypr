@@ -1,0 +1,10 @@
+[01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:[m[K In member function ‘[01m[Kvoid squareController::publish_method()[m[K’:
+[01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:39:8:[m[K [01;31m[Kerror: [m[Kconflicting declaration ‘[01m[Kauto loop_rate[m[K’
+   39 |   auto [01;31m[Kloop_rate[m[K(1);
+      |        [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:22:16:[m[K [01;36m[Knote: [m[Kprevious declaration as ‘[01m[Krclcpp::Rate loop_rate[m[K’
+   22 |   rclcpp::Rate [01;36m[Kloop_rate[m[K(1/time);
+      |                [01;36m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/squareController.dir/build.make:76: CMakeFiles/squareController.dir/src/squareController.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/squareController.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

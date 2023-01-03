@@ -1,0 +1,18 @@
+[0.030s] Invoking command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg -- -j8 -l8
+[0.096s] [35m[1mConsolidate compiler generated dependencies of target squareController[0m
+[0.113s] [ 25%] Built target randomController
+[0.118s] [ 50%] Built target actuator
+[0.122s] [ 75%] Built target keyController
+[0.132s] [ 87%] [32mBuilding CXX object CMakeFiles/squareController.dir/src/squareController.cpp.o[0m
+[6.039s] In file included from [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:1[m[K:
+[6.040s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/include/first_pkg/squareController.hpp:18:3:[m[K [01;31m[Kerror: [m[K‘[01m[Krclppp[m[K’ does not name a type
+[6.040s]    18 |   [01;31m[Krclppp[m[K::declare_parameter<int>("lado",5);
+[6.040s]       |   [01;31m[K^~~~~~[m[K
+[6.081s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:[m[K In member function ‘[01m[Kvoid squareController::publish_method()[m[K’:
+[6.082s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:16:30:[m[K [01;31m[Kerror: [m[K‘[01m[Klado[m[K’ was not declared in this scope
+[6.082s]    16 |   this->get_parameter("lado",[01;31m[Klado[m[K);
+[6.082s]       |                              [01;31m[K^~~~[m[K
+[8.634s] gmake[2]: *** [CMakeFiles/squareController.dir/build.make:76: CMakeFiles/squareController.dir/src/squareController.cpp.o] Error 1
+[8.634s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/squareController.dir/all] Error 2
+[8.634s] gmake: *** [Makefile:146: all] Error 2
+[8.645s] Invoked command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg -- -j8 -l8

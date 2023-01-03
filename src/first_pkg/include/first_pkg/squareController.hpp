@@ -15,6 +15,5 @@ private:
   // Variable de tipo publisher
   // Puntero a un tipo string de una clase publisher (LOL xD)
   // Como es un puntero hay que inicializarlo
-
   rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_;
 };
