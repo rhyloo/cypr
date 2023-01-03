@@ -1,0 +1,13 @@
+[0.016s] Invoking command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg -- -j8 -l8
+[0.051s] [35m[1mConsolidate compiler generated dependencies of target keyController[0m
+[0.061s] [ 66%] Built target randomController
+[0.061s] [ 66%] Built target actuator
+[0.068s] [ 83%] [32mBuilding CXX object CMakeFiles/keyController.dir/src/keyController.cpp.o[0m
+[2.058s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/keyController.cpp:[m[K In destructor ‘[01m[Kvirtual keyController::~keyController()[m[K’:
+[2.058s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/keyController.cpp:11:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+[2.058s]    11 |   [01;31m[Kmessage[m[K.data = "stop";
+[2.058s]       |   [01;31m[K^~~~~~~[m[K
+[2.715s] gmake[2]: *** [CMakeFiles/keyController.dir/build.make:76: CMakeFiles/keyController.dir/src/keyController.cpp.o] Error 1
+[2.715s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/keyController.dir/all] Error 2
+[2.715s] gmake: *** [Makefile:146: all] Error 2
+[2.717s] Invoked command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg -- -j8 -l8

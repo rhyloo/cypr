@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target squareController[0m
+[ 25%] Built target randomController
+[ 62%] Built target actuator
+[ 75%] Built target keyController
+[ 87%] [32mBuilding CXX object CMakeFiles/squareController.dir/src/squareController.cpp.o[0m

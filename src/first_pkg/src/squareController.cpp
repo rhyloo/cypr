@@ -1,5 +1,7 @@
 #include <first_pkg/squareController.hpp>
-#define ratio 10
+
+const int lado = 5;
+
 squareController::squareController() : Node ("squarecontroller"){
   count_=0;
   publisher_=this->create_publisher<std_msgs::msg::String>("/cmd_square",10);
@@ -10,45 +12,41 @@ squareController::~squareController(){
 }
 
 void squareController::publish_method(){
+  
+  rclcpp::Rate loop_rate(1);
   auto message= std_msgs::msg::String();
-  int figura = 4;                  // Lados de la figura
-  int lado = 10;                   // Longitud del lado de la figura
-
-  for(int j = 0; j<4; j++)
-    {
-      for(int i = 0; i<lado; i++)
-        {
-          if (mod(i,ratio) == 0)
-            {
-              message.data = "girar";
-            }
-          else
-            {
-              message.data = "avanzar";
-            }
-        }
+  
+  RCLCPP_INFO(this->get_logger(), "SquareController activo!");
+    
+  for (int i = 1; i <= 44; i++){
+    if (i != 11 && i != 22 && i != 33 && i != 44){
+      message.data = "avanzar";
+    }else{
+      message.data = "girar";
     }
+      
+    // Publicar el mensaje
+    publisher_->publish(message);
+    
+    // Esperar un tiempo para dar tiempo a que el robot procese el comando
+    loop_rate.sleep();
+  }
+}
 
 int main(int argc, char **argv)
 {
+  // rclcpp::Rate loop_rate(1);
   // Incializar ROS
   rclcpp::init (argc,argv);
 
-
   // Instancia de la clase
   squareController p;
-
-  // Clase que controla el tiempo, la inicializa a 1 Hz
-  rclcpp::Rate loop_rate(1);
-
-
-  while(rclcpp::ok())
-    {
+  // while(rclcpp::ok())
+  //   {
+      // Clase que controla el tiempo, la inicializa a 1 Hz
       p.publish_method();
-
-      // Duerme la hebra para intentar asegurar la frecuencia de 1 Hz, si tarda menos se queda dormido hasta el 1 Hz si tarda más ah se siente
-      loop_rate.sleep();
-    }
+    //   loop_rate.sleep();
+    // }
   rclcpp::shutdown();
   return 0;
 }

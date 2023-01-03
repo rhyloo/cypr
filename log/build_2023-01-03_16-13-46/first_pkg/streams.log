@@ -1,0 +1,84 @@
+[0.014s] Invoking command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg -- -j8 -l8
+[0.050s] [35m[1mConsolidate compiler generated dependencies of target squareController[0m
+[0.061s] [ 25%] Built target actuator
+[0.062s] [ 50%] Built target randomController
+[0.066s] [ 75%] Built target keyController
+[0.068s] [ 87%] [32mBuilding CXX object CMakeFiles/squareController.dir/src/squareController.cpp.o[0m
+[2.262s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:[m[K In member function ‘[01m[Kvoid squareController::publish_method()[m[K’:
+[2.262s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:27:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublisher_[m[K’?
+[2.262s]    27 |       [01;31m[Kpublisher[m[K->publish(msg);
+[2.262s]       |       [01;31m[K^~~~~~~~~[m[K
+[2.263s]       |       [32m[Kpublisher_[m[K
+[2.263s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:27:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ was not declared in this scope
+[2.264s]    27 |       publisher->publish([01;31m[Kmsg[m[K);
+[2.264s]       |                          [01;31m[K^~~[m[K
+[2.264s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:27:26:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[2.264s] In file included from [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:7[m[K,
+[2.264s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:20[m[K,
+[2.264s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[2.264s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:32[m[K,
+[2.264s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[2.264s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:23[m[K,
+[2.264s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.264s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.265s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.265s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.265s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.265s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.265s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.265s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.265s]                  from [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/include/first_pkg/squareController.hpp:1[m[K,
+[2.265s]                  from [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:1[m[K:
+[2.265s] [01m[K/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kbuiltin_interfaces::msg[m[K’
+[2.265s]    27 | namespace [01;36m[Kmsg[m[K
+[2.265s]       |           [01;36m[K^~~[m[K
+[2.265s] In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:7[m[K,
+[2.265s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:28[m[K,
+[2.266s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription_options.hpp:30[m[K,
+[2.266s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:45[m[K,
+[2.266s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[2.266s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.266s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.266s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.266s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.266s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.266s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.266s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.266s]                  from [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/include/first_pkg/squareController.hpp:1[m[K,
+[2.266s]                  from [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:1[m[K:
+[2.266s] [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Krcl_interfaces::msg[m[K’
+[2.266s]    27 | namespace [01;36m[Kmsg[m[K
+[2.266s]       |           [01;36m[K^~~[m[K
+[2.266s] In file included from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp:23[m[K,
+[2.266s]                  from [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp:7[m[K,
+[2.266s]                  from [01m[K/opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:21[m[K,
+[2.266s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[2.266s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[2.267s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[2.267s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.267s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.267s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.267s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.267s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.267s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.267s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.267s]                  from [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/include/first_pkg/squareController.hpp:1[m[K,
+[2.267s]                  from [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:1[m[K:
+[2.267s] [01m[K/opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstatistics_msgs::msg[m[K’
+[2.267s]    27 | namespace [01;36m[Kmsg[m[K
+[2.267s]       |           [01;36m[K^~~[m[K
+[2.267s] In file included from [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp:7[m[K,
+[2.267s]                  from [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/include/first_pkg/squareController.hpp:2[m[K,
+[2.267s]                  from [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:1[m[K:
+[2.267s] [01m[K/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd_msgs::msg[m[K’
+[2.267s]    27 | namespace [01;36m[Kmsg[m[K
+[2.267s]       |           [01;36m[K^~~[m[K
+[2.267s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:[m[K At global scope:
+[2.268s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:33:1:[m[K [01;31m[Kerror: [m[K‘[01m[KInt[m[K’ does not name a type; did you mean ‘[01m[Kint[m[K’?
+[2.268s]    33 | [01;31m[KInt[m[K main(int argc, char **argv)
+[2.268s]       | [01;31m[K^~~[m[K
+[2.268s]       | [32m[Kint[m[K
+[2.937s] gmake[2]: *** [CMakeFiles/squareController.dir/build.make:76: CMakeFiles/squareController.dir/src/squareController.cpp.o] Error 1
+[2.937s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/squareController.dir/all] Error 2
+[2.938s] gmake: *** [Makefile:146: all] Error 2
+[2.939s] Invoked command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg -- -j8 -l8

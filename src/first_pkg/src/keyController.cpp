@@ -36,11 +36,11 @@ void keyController::publish_method(){
         break;
       case 0x43:
         // RCLCPP_INFO(this->get_logger(), "[KeyController] Detected Right key\r");
-        message.data = "w++";
+        message.data = "w--";
         break;
       case 0x44:
         // RCLCPP_INFO(this->get_logger(), "[KeyController] Detected Left key\r");
-        message.data = "w--";
+        message.data = "w++";
         break;
       case 0x20:
         // RCLCPP_INFO(this->get_logger(), "[KeyController] Detected Space key\r");
@@ -48,9 +48,10 @@ void keyController::publish_method(){
         break;
       case 'q':
         // RCLCPP_INFO(this->get_logger(), "[KeyController] Detected q = Exit\r");
+        message.data = "stop";
+        publisher_->publish(message);
         salir=true;
-        //restore the console
-        system("stty cooked echo");
+        break;
       }
       count_++;
       RCLCPP_INFO(this->get_logger(),"[#%ld] Publishing: '%s'\r",count_,message.data.c_str());
@@ -59,8 +60,16 @@ void keyController::publish_method(){
   }
 }
 
+void keyController::publishTheLastMethod(){
+  auto message= std_msgs::msg::String();
+  message.data = "stop";
+  publisher_->publish(message);
+}
+
 int main(int argc, char **argv)
 {
+  auto message= std_msgs::msg::String();
+  
   // Incializar ROS
   rclcpp::init (argc,argv);
 
@@ -70,6 +79,8 @@ int main(int argc, char **argv)
 
   // Clase que controla el tiempo, la inicializa a 1 Hz
   p.publish_method();
+  p.publishTheLastMethod();
+  system("stty cooked echo");
   rclcpp::shutdown();
   return 0;
 }

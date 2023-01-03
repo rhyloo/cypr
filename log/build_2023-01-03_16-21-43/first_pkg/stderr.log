@@ -1,0 +1,7 @@
+[01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:[m[K In member function ‘[01m[Kvoid squareController::publish_method()[m[K’:
+[01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:30:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kloop_rate[m[K’ was not declared in this scope
+   30 |       [01;31m[Kloop_rate[m[K.sleep();
+      |       [01;31m[K^~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/squareController.dir/build.make:76: CMakeFiles/squareController.dir/src/squareController.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/squareController.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -8,6 +8,7 @@ public:
   ~keyController(); // Destructor
 
   void publish_method();
+  void publishTheLastMethod() ;
 
   // Voy a contar cuantas veces publico
   // Es buena practica que las variables terminen en _ para identificar las variables privadas

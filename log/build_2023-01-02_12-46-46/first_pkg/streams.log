@@ -1,0 +1,17 @@
+[0.011s] Invoking command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg -- -j8 -l8
+[0.047s] [35m[1mConsolidate compiler generated dependencies of target keyController[0m
+[0.058s] [ 33%] Built target randomController
+[0.058s] [ 66%] Built target actuator
+[0.062s] [ 83%] [32mBuilding CXX object CMakeFiles/keyController.dir/src/keyController.cpp.o[0m
+[1.982s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/keyController.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.982s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/keyController.cpp:80:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass keyController[m[K’ has no member named ‘[01m[Kpublish[m[K’; did you mean ‘[01m[Krclcpp::Publisher<std_msgs::msg::String_<std::allocator<void> > >::SharedPtr keyController::publisher_[m[K’? (not accessible from this context)
+[1.982s]    80 |   p.[01;31m[Kpublish[m[K(message);
+[1.982s]       |     [01;31m[K^~~~~~~[m[K
+[1.982s] In file included from [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/keyController.cpp:1[m[K:
+[1.982s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/include/first_pkg/keyController.hpp:22:55:[m[K [01;36m[Knote: [m[Kdeclared private here
+[1.982s]    22 |   rclcpp::Publisher<std_msgs::msg::String>::SharedPtr [01;36m[Kpublisher_[m[K;
+[1.982s]       |                                                       [01;36m[K^~~~~~~~~~[m[K
+[2.649s] gmake[2]: *** [CMakeFiles/keyController.dir/build.make:76: CMakeFiles/keyController.dir/src/keyController.cpp.o] Error 1
+[2.649s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/keyController.dir/all] Error 2
+[2.649s] gmake: *** [Makefile:146: all] Error 2
+[2.654s] Invoked command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg -- -j8 -l8

@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target squareController[0m
+[ 25%] Built target actuator
+[ 75%] Built target keyController
+[ 75%] Built target randomController
+[ 87%] [32mBuilding CXX object CMakeFiles/squareController.dir/src/squareController.cpp.o[0m
+[01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:33:1:[m[K [01;31m[Kerror: [m[K‘[01m[KInt[m[K’ does not name a type; did you mean ‘[01m[Kint[m[K’?
+   33 | [01;31m[KInt[m[K main(int argc, char **argv)
+      | [01;31m[K^~~[m[K
+      | [32m[Kint[m[K
+gmake[2]: *** [CMakeFiles/squareController.dir/build.make:76: CMakeFiles/squareController.dir/src/squareController.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/squareController.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

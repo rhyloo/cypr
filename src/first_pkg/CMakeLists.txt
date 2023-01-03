@@ -38,6 +38,7 @@ include_directories(
 add_executable(randomController src/randomController.cpp)
 add_executable(actuator src/actuator.cpp)
 add_executable(keyController src/keyController.cpp)
+add_executable(squareController src/squareController.cpp)
 #add_executable(randomController src/randomController.cpp src/mimain.cpp) Si tuviera el main en otro fichero, probar en casa
 
 # 2
@@ -46,6 +47,7 @@ install(TARGETS
   randomController
   actuator
   keyController
+  squareController
   DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY
@@ -55,4 +57,5 @@ install(DIRECTORY
 ament_target_dependencies(randomController rclcpp std_msgs)
 ament_target_dependencies(actuator rclcpp std_msgs geometry_msgs)
 ament_target_dependencies(keyController rclcpp std_msgs)
+ament_target_dependencies(squareController rclcpp std_msgs)
 ament_package()

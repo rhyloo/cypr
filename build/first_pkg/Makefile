@@ -236,6 +236,19 @@ keyController/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/keyController.dir/build.make CMakeFiles/keyController.dir/build
 .PHONY : keyController/fast
 
+#=============================================================================
+# Target rules for targets named squareController
+
+# Build rule for target.
+squareController: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 squareController
+.PHONY : squareController
+
+# fast build rule for target.
+squareController/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/squareController.dir/build.make CMakeFiles/squareController.dir/build
+.PHONY : squareController/fast
+
 src/actuator.o: src/actuator.cpp.o
 .PHONY : src/actuator.o
 
@@ -308,6 +321,30 @@ src/randomController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/randomController.dir/build.make CMakeFiles/randomController.dir/src/randomController.cpp.s
 .PHONY : src/randomController.cpp.s
 
+src/squareController.o: src/squareController.cpp.o
+.PHONY : src/squareController.o
+
+# target to build an object file
+src/squareController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/squareController.dir/build.make CMakeFiles/squareController.dir/src/squareController.cpp.o
+.PHONY : src/squareController.cpp.o
+
+src/squareController.i: src/squareController.cpp.i
+.PHONY : src/squareController.i
+
+# target to preprocess a source file
+src/squareController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/squareController.dir/build.make CMakeFiles/squareController.dir/src/squareController.cpp.i
+.PHONY : src/squareController.cpp.i
+
+src/squareController.s: src/squareController.cpp.s
+.PHONY : src/squareController.s
+
+# target to generate assembly for a file
+src/squareController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/squareController.dir/build.make CMakeFiles/squareController.dir/src/squareController.cpp.s
+.PHONY : src/squareController.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -326,6 +363,7 @@ help:
 	@echo "... actuator"
 	@echo "... keyController"
 	@echo "... randomController"
+	@echo "... squareController"
 	@echo "... src/actuator.o"
 	@echo "... src/actuator.i"
 	@echo "... src/actuator.s"
@@ -335,6 +373,9 @@ help:
 	@echo "... src/randomController.o"
 	@echo "... src/randomController.i"
 	@echo "... src/randomController.s"
+	@echo "... src/squareController.o"
+	@echo "... src/squareController.i"
+	@echo "... src/squareController.s"
 .PHONY : help
 
 

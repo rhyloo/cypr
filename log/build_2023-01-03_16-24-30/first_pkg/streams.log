@@ -1,0 +1,19 @@
+[0.016s] Invoking command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg -- -j8 -l8
+[0.062s] [35m[1mConsolidate compiler generated dependencies of target squareController[0m
+[0.073s] [ 25%] Built target randomController
+[0.074s] [ 50%] Built target keyController
+[0.075s] [ 75%] Built target actuator
+[0.081s] [ 87%] [32mBuilding CXX object CMakeFiles/squareController.dir/src/squareController.cpp.o[0m
+[2.305s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:48:21:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K;[m[K’ token
+[2.306s]    48 |   rclcpp::shutdown()[01;31m[K;[m[K
+[2.306s]       |                     [01;31m[K^[m[K
+[2.306s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:49:3:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kreturn[m[K’
+[2.306s]    49 |   [01;31m[Kreturn[m[K 0;
+[2.306s]       |   [01;31m[K^~~~~~[m[K
+[2.306s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/squareController.cpp:50:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[2.306s]    50 | [01;31m[K}[m[K
+[2.306s]       | [01;31m[K^[m[K
+[3.032s] gmake[2]: *** [CMakeFiles/squareController.dir/build.make:76: CMakeFiles/squareController.dir/src/squareController.cpp.o] Error 1
+[3.032s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/squareController.dir/all] Error 2
+[3.032s] gmake: *** [Makefile:146: all] Error 2
+[3.034s] Invoked command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg -- -j8 -l8

@@ -1,0 +1,59 @@
+[0.013s] Invoking command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg -- -j8 -l8
+[0.050s] [35m[1mConsolidate compiler generated dependencies of target actuator[0m
+[0.050s] [35m[1mConsolidate compiler generated dependencies of target keyController[0m
+[0.063s] [ 33%] Built target randomController
+[0.069s] [ 66%] [32mBuilding CXX object CMakeFiles/keyController.dir/src/keyController.cpp.o[0m
+[0.069s] [ 66%] [32mBuilding CXX object CMakeFiles/actuator.dir/src/actuator.cpp.o[0m
+[4.115s] [ 83%] [32m[1mLinking CXX executable keyController[0m
+[4.320s] [ 83%] Built target keyController
+[8.543s] [100%] [32m[1mLinking CXX executable actuator[0m
+[8.971s] [100%] Built target actuator
+[8.982s] Invoked command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg -- -j8 -l8
+[9.013s] Invoking command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg
+[9.019s] -- Install configuration: ""
+[9.019s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/lib/first_pkg/randomController
+[9.019s] -- Installing: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/lib/first_pkg/actuator
+[9.024s] -- Set runtime path of "/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/lib/first_pkg/actuator" to ""
+[9.024s] -- Installing: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/lib/first_pkg/keyController
+[9.026s] -- Set runtime path of "/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/lib/first_pkg/keyController" to ""
+[9.026s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch
+[9.026s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/build
+[9.026s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/build/.built_by
+[9.026s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/build/COLCON_IGNORE
+[9.027s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/first_pkg.launch
+[9.027s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install
+[9.027s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/local_setup.ps1
+[9.027s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/_local_setup_util_ps1.py
+[9.027s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/setup.ps1
+[9.027s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/.colcon_install_layout
+[9.028s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/_local_setup_util_sh.py
+[9.028s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/setup.zsh
+[9.028s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/setup.sh
+[9.028s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/local_setup.bash
+[9.028s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/local_setup.zsh
+[9.028s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/local_setup.sh
+[9.028s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/setup.bash
+[9.028s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/COLCON_IGNORE
+[9.028s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/log
+[9.029s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/log/build_2022-11-07_10-24-59
+[9.029s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/log/build_2022-11-07_10-24-59/logger_all.log
+[9.029s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/log/build_2022-11-07_10-24-59/events.log
+[9.029s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/log/latest
+[9.029s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/log/latest_build
+[9.029s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/log/COLCON_IGNORE
+[9.029s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/ament_index/resource_index/package_run_dependencies/first_pkg
+[9.030s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/ament_index/resource_index/parent_prefix_path/first_pkg
+[9.030s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/environment/ament_prefix_path.sh
+[9.030s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/environment/ament_prefix_path.dsv
+[9.031s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/environment/path.sh
+[9.031s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/environment/path.dsv
+[9.032s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/local_setup.bash
+[9.032s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/local_setup.sh
+[9.033s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/local_setup.zsh
+[9.033s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/local_setup.dsv
+[9.033s] -- Installing: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/package.dsv
+[9.034s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/ament_index/resource_index/packages/first_pkg
+[9.034s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/cmake/first_pkgConfig.cmake
+[9.034s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/cmake/first_pkgConfig-version.cmake
+[9.034s] -- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/package.xml
+[9.034s] Invoked command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg

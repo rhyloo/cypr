@@ -1,11 +1,12 @@
 #include <first_pkg/actuator.hpp>
-
+#define PI 3.1415926535897 
 using std::placeholders::_1;
 
 Actuator::Actuator(): Node ("actuator"){
   pub_ = this->create_publisher<geometry_msgs::msg::Twist> ("/turtle1/cmd_vel", 10);
   sub_ = this->create_subscription<std_msgs::msg::String> ("/cmd_random",10,std::bind(&Actuator::sendRandomCommand, this, _1));
   sub2_ = this->create_subscription<std_msgs::msg::String> ("/cmd_key",10,std::bind(&Actuator::sendKeyCommand, this, _1));
+  sub3_ = this->create_subscription<std_msgs::msg::String> ("/cmd_square",10,std::bind(&Actuator::sendSquareCommand, this, _1));
 }
 
 Actuator::~Actuator()
@@ -61,6 +62,25 @@ void Actuator::sendKeyCommand(const std_msgs::msg::String::SharedPtr msg) const{
   RCLCPP_INFO (this->get_logger(), "Velocidad angular: '%f'",angular);
 }
 
+void Actuator::sendSquareCommand(const std_msgs::msg::String::SharedPtr msg) const{
+  geometry_msgs::msg::Twist actuation;
+  float linear, angular;
+
+  RCLCPP_INFO (this->get_logger(), "Received: '%s'",msg->data.c_str());
+
+  if(msg->data=="avanzar"){
+    linear = 10; angular=0;
+  }else if (msg->data=="girar"){
+    linear = 0; angular=98;
+  }
+
+  actuation.linear.x = linear;
+  actuation.angular.z = angular;
+
+  pub_->publish(actuation);
+
+}
+
 void Actuator::publishActuation(){
   pub_->publish(keyControllerActuation);
 }
@@ -70,7 +90,9 @@ int main(int argc, char * argv[])
   rclcpp::init(argc,argv);
   //  Actuator Publicador;
   auto node = std::make_shared<Actuator>();
-  rclcpp::Rate loop_rate(2);
+
+  rclcpp::Rate loop_rate(1);
+  
   while (rclcpp::ok()) {
     //Atendemos a los topics subscritos y modificamos velocidades
     rclcpp::spin_some(node);
@@ -79,6 +101,7 @@ int main(int argc, char * argv[])
     // mantenemos rate
     loop_rate.sleep();
   }
+  
   // rclcpp::spin(node);
   rclcpp::shutdown();
   return 0;

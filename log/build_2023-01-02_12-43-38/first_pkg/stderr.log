@@ -1,0 +1,7 @@
+[01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/keyController.cpp:[m[K In destructor ‘[01m[Kvirtual keyController::~keyController()[m[K’:
+[01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/keyController.cpp:11:3:[m[K [01;31m[Kerror: [m[K‘[01m[Kmessage[m[K’ was not declared in this scope
+   11 |   [01;31m[Kmessage[m[K.data = "stop";
+      |   [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/keyController.dir/build.make:76: CMakeFiles/keyController.dir/src/keyController.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/keyController.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

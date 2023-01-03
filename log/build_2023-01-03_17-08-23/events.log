@@ -1,0 +1,154 @@
+[0.000000] (-) TimerEvent: {}
+[0.000122] (first_pkg) JobQueued: {'identifier': 'first_pkg', 'dependencies': OrderedDict()}
+[0.000563] (first_pkg) JobStarted: {'identifier': 'first_pkg'}
+[0.009093] (first_pkg) JobProgress: {'identifier': 'first_pkg', 'progress': 'cmake'}
+[0.009621] (first_pkg) JobProgress: {'identifier': 'first_pkg', 'progress': 'build'}
+[0.010287] (first_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg', '--', '-j8', '-l8'], 'cwd': '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US'), ('USER', 'rhyloo'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1582'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mint'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/usr/bin/firefox'), ('HOME', '/home/rhyloo'), ('OLDPWD', '/home/rhyloo/Documents/Universidad/CyPR/ROS'), ('DESKTOP_SESSION', 'xfce'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'es_ES.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('QSYS_ROOTDIR', '/home/rhyloo/intelFPGA_lite/18.1/quartus/sopc_builder/bin'), ('MANDATORY_PATH', '/usr/share/gconf/xfce.mandatory.path'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('COLCON_PREFIX_PATH', '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rhyloo'), ('WINDOWID', '83886083'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/xfce.default.path'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', 'c2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/rhyloo/.local/Software/:/home/rhyloo/MATLAB/:/opt/ros/humble/bin:/home/rhyloo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/altera/19.1/quartus/bin:/opt/altera/19.1/modelsim_ase/linuxaloem:/opt/altera/19.1/quartus/bin:/opt/altera/19.1/modelsim_ase/linuxaloem:/opt/altera/18.1/quartus/bin:/opt/altera/18.1/modelsim_ase/linuxaloem'), ('SESSION_MANAGER', 'local/rhylap:@/tmp/.ICE-unix/1406,unix/rhylap:/tmp/.ICE-unix/1406'), ('GDM_LANG', 'en_US'), ('GTK3_MODULES', 'xapp-gtk3-module'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'xfce-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'xfce'), ('XAUTHORITY', '/home/rhyloo/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXSzj4Wf/agent.1578'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/rhyloo'), ('AMENT_PREFIX_PATH', '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xfce'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('XDG_VTNR', '7'), ('PWD', '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xfce:/etc/xdg:/etc/xdg'), ('CLUTTER_IM_MODULE', 'ibus'), ('XDG_DATA_DIRS', '/usr/share/xfce4:/home/rhyloo/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/usr/share'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg:/opt/ros/humble')]), 'shell': False}
+[0.053828] (first_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target actuator\x1b[0m\n'}
+[0.064138] (first_pkg) StdoutLine: {'line': b'[ 50%] Built target randomController\n'}
+[0.064554] (first_pkg) StdoutLine: {'line': b'[ 50%] Built target keyController\n'}
+[0.064719] (first_pkg) StdoutLine: {'line': b'[ 75%] Built target squareController\n'}
+[0.072371] (first_pkg) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/actuator.dir/src/actuator.cpp.o\x1b[0m\n'}
+[0.098793] (-) TimerEvent: {}
+[0.199065] (-) TimerEvent: {}
+[0.299366] (-) TimerEvent: {}
+[0.399648] (-) TimerEvent: {}
+[0.499906] (-) TimerEvent: {}
+[0.600195] (-) TimerEvent: {}
+[0.700532] (-) TimerEvent: {}
+[0.800794] (-) TimerEvent: {}
+[0.901102] (-) TimerEvent: {}
+[1.001393] (-) TimerEvent: {}
+[1.101757] (-) TimerEvent: {}
+[1.202144] (-) TimerEvent: {}
+[1.302444] (-) TimerEvent: {}
+[1.402789] (-) TimerEvent: {}
+[1.503070] (-) TimerEvent: {}
+[1.603366] (-) TimerEvent: {}
+[1.703650] (-) TimerEvent: {}
+[1.803912] (-) TimerEvent: {}
+[1.904178] (-) TimerEvent: {}
+[2.004476] (-) TimerEvent: {}
+[2.104756] (-) TimerEvent: {}
+[2.205100] (-) TimerEvent: {}
+[2.305428] (-) TimerEvent: {}
+[2.405919] (-) TimerEvent: {}
+[2.506342] (-) TimerEvent: {}
+[2.606728] (-) TimerEvent: {}
+[2.707031] (-) TimerEvent: {}
+[2.807364] (-) TimerEvent: {}
+[2.907732] (-) TimerEvent: {}
+[3.008123] (-) TimerEvent: {}
+[3.108556] (-) TimerEvent: {}
+[3.209007] (-) TimerEvent: {}
+[3.309302] (-) TimerEvent: {}
+[3.409601] (-) TimerEvent: {}
+[3.509830] (-) TimerEvent: {}
+[3.610098] (-) TimerEvent: {}
+[3.710397] (-) TimerEvent: {}
+[3.810727] (-) TimerEvent: {}
+[3.910970] (-) TimerEvent: {}
+[4.011241] (-) TimerEvent: {}
+[4.111474] (-) TimerEvent: {}
+[4.211731] (-) TimerEvent: {}
+[4.311993] (-) TimerEvent: {}
+[4.412316] (-) TimerEvent: {}
+[4.512662] (-) TimerEvent: {}
+[4.612890] (-) TimerEvent: {}
+[4.713150] (-) TimerEvent: {}
+[4.813401] (-) TimerEvent: {}
+[4.913667] (-) TimerEvent: {}
+[5.013932] (-) TimerEvent: {}
+[5.114197] (-) TimerEvent: {}
+[5.214414] (-) TimerEvent: {}
+[5.314723] (-) TimerEvent: {}
+[5.415144] (-) TimerEvent: {}
+[5.515551] (-) TimerEvent: {}
+[5.615985] (-) TimerEvent: {}
+[5.716219] (-) TimerEvent: {}
+[5.816598] (-) TimerEvent: {}
+[5.917010] (-) TimerEvent: {}
+[6.017282] (-) TimerEvent: {}
+[6.117592] (-) TimerEvent: {}
+[6.217910] (-) TimerEvent: {}
+[6.318282] (-) TimerEvent: {}
+[6.418653] (-) TimerEvent: {}
+[6.519012] (-) TimerEvent: {}
+[6.619278] (-) TimerEvent: {}
+[6.719499] (-) TimerEvent: {}
+[6.819772] (-) TimerEvent: {}
+[6.920080] (-) TimerEvent: {}
+[7.020341] (-) TimerEvent: {}
+[7.120592] (-) TimerEvent: {}
+[7.220869] (-) TimerEvent: {}
+[7.321224] (-) TimerEvent: {}
+[7.421522] (-) TimerEvent: {}
+[7.521776] (-) TimerEvent: {}
+[7.622095] (-) TimerEvent: {}
+[7.722422] (-) TimerEvent: {}
+[7.822787] (-) TimerEvent: {}
+[7.923050] (-) TimerEvent: {}
+[8.023343] (-) TimerEvent: {}
+[8.123603] (-) TimerEvent: {}
+[8.223857] (-) TimerEvent: {}
+[8.324159] (-) TimerEvent: {}
+[8.424441] (-) TimerEvent: {}
+[8.460704] (first_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable actuator\x1b[0m\n'}
+[8.524584] (-) TimerEvent: {}
+[8.625026] (-) TimerEvent: {}
+[8.725495] (-) TimerEvent: {}
+[8.825870] (-) TimerEvent: {}
+[8.893436] (first_pkg) StdoutLine: {'line': b'[100%] Built target actuator\n'}
+[8.903145] (first_pkg) CommandEnded: {'returncode': 0}
+[8.925955] (-) TimerEvent: {}
+[8.929667] (first_pkg) JobProgress: {'identifier': 'first_pkg', 'progress': 'install'}
+[8.937040] (first_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg'], 'cwd': '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US'), ('USER', 'rhyloo'), ('XDG_SEAT', 'seat0'), ('SSH_AGENT_PID', '1582'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mint'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/usr/bin/firefox'), ('HOME', '/home/rhyloo'), ('OLDPWD', '/home/rhyloo/Documents/Universidad/CyPR/ROS'), ('DESKTOP_SESSION', 'xfce'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'es_ES.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('QSYS_ROOTDIR', '/home/rhyloo/intelFPGA_lite/18.1/quartus/sopc_builder/bin'), ('MANDATORY_PATH', '/usr/share/gconf/xfce.mandatory.path'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('COLCON_PREFIX_PATH', '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rhyloo'), ('WINDOWID', '83886083'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/xfce.default.path'), ('CLUTTER_BACKEND', 'x11'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', 'c2'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/rhyloo/.local/Software/:/home/rhyloo/MATLAB/:/opt/ros/humble/bin:/home/rhyloo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/opt/altera/19.1/quartus/bin:/opt/altera/19.1/modelsim_ase/linuxaloem:/opt/altera/19.1/quartus/bin:/opt/altera/19.1/modelsim_ase/linuxaloem:/opt/altera/18.1/quartus/bin:/opt/altera/18.1/modelsim_ase/linuxaloem'), ('SESSION_MANAGER', 'local/rhylap:@/tmp/.ICE-unix/1406,unix/rhylap:/tmp/.ICE-unix/1406'), ('GDM_LANG', 'en_US'), ('GTK3_MODULES', 'xapp-gtk3-module'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'xfce-'), ('LC_ADDRESS', 'es_ES.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0.0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'XFCE'), ('LC_TELEPHONE', 'es_ES.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'xfce'), ('XAUTHORITY', '/home/rhyloo/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/tmp/ssh-XXXXXXSzj4Wf/agent.1578'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/rhyloo'), ('AMENT_PREFIX_PATH', '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_ES.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'xfce'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_ES.UTF-8'), ('LC_IDENTIFICATION', 'es_ES.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('XDG_VTNR', '7'), ('PWD', '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-xfce:/etc/xdg:/etc/xdg'), ('CLUTTER_IM_MODULE', 'ibus'), ('XDG_DATA_DIRS', '/usr/share/xfce4:/home/rhyloo/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/usr/share'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_ES.UTF-8'), ('LC_PAPER', 'es_ES.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg:/opt/ros/humble')]), 'shell': False}
+[8.943807] (first_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.944052] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/lib/first_pkg/randomController\n'}
+[8.944423] (first_pkg) StdoutLine: {'line': b'-- Installing: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/lib/first_pkg/actuator\n'}
+[8.948355] (first_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/lib/first_pkg/actuator" to ""\n'}
+[8.948548] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/lib/first_pkg/keyController\n'}
+[8.948874] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/lib/first_pkg/squareController\n'}
+[8.949074] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch\n'}
+[8.949143] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/build\n'}
+[8.949233] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/build/.built_by\n'}
+[8.949336] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/build/COLCON_IGNORE\n'}
+[8.949415] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/first_pkg.launch\n'}
+[8.949502] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install\n'}
+[8.949600] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/local_setup.ps1\n'}
+[8.949662] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/_local_setup_util_ps1.py\n'}
+[8.949727] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/setup.ps1\n'}
+[8.949793] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/.colcon_install_layout\n'}
+[8.949865] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/_local_setup_util_sh.py\n'}
+[8.949928] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/setup.zsh\n'}
+[8.949989] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/setup.sh\n'}
+[8.950052] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/local_setup.bash\n'}
+[8.950116] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/local_setup.zsh\n'}
+[8.950179] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/local_setup.sh\n'}
+[8.950241] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/setup.bash\n'}
+[8.950309] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/install/COLCON_IGNORE\n'}
+[8.950361] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/log\n'}
+[8.950427] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/log/build_2022-11-07_10-24-59\n'}
+[8.950481] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/log/build_2022-11-07_10-24-59/logger_all.log\n'}
+[8.950539] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/log/build_2022-11-07_10-24-59/events.log\n'}
+[8.950595] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/log/latest\n'}
+[8.950652] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/log/latest_build\n'}
+[8.950709] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg//launch/log/COLCON_IGNORE\n'}
+[8.950808] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/ament_index/resource_index/package_run_dependencies/first_pkg\n'}
+[8.950861] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/ament_index/resource_index/parent_prefix_path/first_pkg\n'}
+[8.950913] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/environment/ament_prefix_path.sh\n'}
+[8.950965] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/environment/ament_prefix_path.dsv\n'}
+[8.951022] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/environment/path.sh\n'}
+[8.951075] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/environment/path.dsv\n'}
+[8.951127] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/local_setup.bash\n'}
+[8.951180] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/local_setup.sh\n'}
+[8.951233] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/local_setup.zsh\n'}
+[8.951284] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/local_setup.dsv\n'}
+[8.951335] (first_pkg) StdoutLine: {'line': b'-- Installing: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/package.dsv\n'}
+[8.951385] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/ament_index/resource_index/packages/first_pkg\n'}
+[8.951436] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/cmake/first_pkgConfig.cmake\n'}
+[8.951487] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/cmake/first_pkgConfig-version.cmake\n'}
+[8.951538] (first_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/install/first_pkg/share/first_pkg/package.xml\n'}
+[8.952342] (first_pkg) CommandEnded: {'returncode': 0}
+[9.005138] (first_pkg) JobEnded: {'identifier': 'first_pkg', 'rc': 0}
+[9.005448] (-) EventReactorShutdown: {}

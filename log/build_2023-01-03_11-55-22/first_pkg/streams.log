@@ -1,0 +1,24 @@
+[0.014s] Invoking command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg -- -j8 -l8
+[0.051s] [35m[1mConsolidate compiler generated dependencies of target keyController[0m
+[0.062s] [ 33%] [32mBuilding CXX object CMakeFiles/actuator.dir/src/actuator.cpp.o[0m
+[0.062s] [ 50%] Built target randomController
+[0.070s] [ 66%] [32mBuilding CXX object CMakeFiles/keyController.dir/src/keyController.cpp.o[0m
+[2.344s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/keyController.cpp:63:6:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid keyController::publishTheLastMethod()[m[K’
+[2.344s]    63 | void [01;31m[KkeyController[m[K::publishTheLastMethod(){
+[2.344s]       |      [01;31m[K^~~~~~~~~~~~~[m[K
+[2.344s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/keyController.cpp:63:6:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid keyController::publishTheLastMethod()[m[K’
+[2.344s] In file included from [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/keyController.cpp:1[m[K:
+[2.344s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/include/first_pkg/keyController.hpp:5:7:[m[K [01;36m[Knote: [m[K‘[01m[Kclass keyController[m[K’ defined here
+[2.344s]     5 | class [01;36m[KkeyController[m[K : public rclcpp::Node {
+[2.344s]       |       [01;36m[K^~~~~~~~~~~~~[m[K
+[2.346s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/keyController.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[2.346s] [01m[K/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/src/first_pkg/src/keyController.cpp:82:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass keyController[m[K’ has no member named ‘[01m[KpublishTheLastMethod[m[K’
+[2.346s]    82 |   p.[01;31m[KpublishTheLastMethod[m[K();
+[2.346s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.121s] gmake[2]: *** [CMakeFiles/keyController.dir/build.make:76: CMakeFiles/keyController.dir/src/keyController.cpp.o] Error 1
+[3.121s] gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/keyController.dir/all] Error 2
+[3.121s] gmake[1]: *** Waiting for unfinished jobs....
+[8.388s] [ 83%] [32m[1mLinking CXX executable actuator[0m
+[8.811s] [ 83%] Built target actuator
+[8.812s] gmake: *** [Makefile:146: all] Error 2
+[8.815s] Invoked command in '/home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/rhyloo/Documents/Universidad/CyPR/ROS/dev_ws/build/first_pkg -- -j8 -l8
